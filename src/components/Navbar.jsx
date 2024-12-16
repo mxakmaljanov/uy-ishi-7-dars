@@ -14,7 +14,7 @@ function Navbar() {
             to="/"
             className="btn btn-success text-2xl font-medium hidden md:flex"
           >
-            myStore
+            Market
           </Link>
           <div className="dropdown md:hidden">
             <div
@@ -22,7 +22,7 @@ function Navbar() {
               role="button"
               className="btn btn-success text-xl font-medium"
             >
-              myStore
+              Market
             </div>
             <ul
               tabIndex={0}

@@ -1,14 +1,4 @@
 import { createContext, useEffect, useReducer } from "react";
-
-// const dataFromLocalStorage = () => {
-//   return (
-//     JSON.parse(localStorage.getItem("products")) || {
-//       color: "",
-//       selectedProduct: [],
-//     }
-//   );
-// };
-
 export const GlobalContext = createContext();
 const changeState = (state, action) => {
   const { type, payload } = action;
@@ -28,11 +18,6 @@ export function GlobalContextProvider({ children }) {
     color: "",
     selectedProduct: [],
   });
-
-  // useEffect(() => {
-  //   localStorage.setItem("products", JSON.stringify(state));
-  // }, [state]);
-
   return (
     <GlobalContext.Provider value={{ ...state, dispatch }}>
       {children}

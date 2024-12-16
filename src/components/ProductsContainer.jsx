@@ -11,7 +11,7 @@ function ProductsContainer() {
     e.preventDefault();
     const product = selectedProduct.find((product) => prod.id == product.id);
     if (product) {
-      toast.warn("Bu maxsulot savatda bor !");
+      toast.warn("Bu maxsulotni sotib olgansiz!Iltimos boshqa mahsulotni tanlang");
       return;
     }
 
